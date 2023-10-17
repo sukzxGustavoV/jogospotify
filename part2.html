@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Qual é a música?</title>
+  <link rel="stylesheet" href="style-2.css">
+</head>
+<body>
+
+  <form class="card">
+    <div class="card-header">
+      <video id="background-video" autoplay loop muted>
+          <source src="music.mp4" type="video/mp4">
+      </video>
+  </div>
+      <button id="start-game" onclick="startGame()" class="submit">Iniciar jogo</button>
+      <button id="play-music" class="submit">Play</button> <br>
+      <label id="lbl-resposta" for="resposta" class="h1">Qual é a música?</label>
+      <input type="text" id="resposta" class="submit1"></input>
+      <button id="btn-resposta" class="submit">Enviar</button> <br>
+      <p id="pontuacao">Pontuação: <span id="pontos">0</span></p>
+      <br>
+      <div id="game-container"></div>
+</form>
+
+</body>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script src="script.js"></script>
+</html>
