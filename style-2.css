@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212; /* Cor de fundo escura semelhante ao Spotify */
+}
+
+.spotify-layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #1DB954; /* Cor de fundo do Spotify */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.album-cover {
+  background-image: url('album-cover.jpg'); /* Adicione a URL da imagem do álbum */
+  background-size: cover;
+  background-position: center top;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.play-button {
+  background-color: #ffffff; /* Cor de fundo do botão "Play" */
+  color: #000000; /* Cor do texto do botão "Play" */
+  font-size: 36px;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  margin: 20px auto;
+}
+
+.start-button {
+  background-color: #1DB954; /* Cor de fundo do botão "Iniciar jogo" */
+  color: #ffffff; /* Cor do texto do botão "Iniciar jogo" */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.song-title {
+  color: #ffffff; /* Cor do texto da música */
+  font-size: 24px;
+}
+
+.answer-input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #1DB954; /* Cor da borda da caixa de texto */
+  border-radius: 5px;
+  margin: 10px;
+  background: transparent;
+  color: #ffffff; /* Cor do texto da caixa de texto */
+}
+
+.send-button {
+  background-color: #1DB954; /* Cor de fundo do botão "Enviar" */
+  color: #ffffff; /* Cor do texto do botão "Enviar" */
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background-color: #000000;
+  padding: 80px;
+  border-radius: 20px;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 40px 5px rgba(6,66,20,0.63);
+}
+
+.card .submit{
+  width: 100%;
+  height: 40px;
+  background-color: #1db954;
+  border:none;
+  border-radius: 100px;
+  color:#e1e1e1;
+  margin: 10px 0;
+}
+
+.card .submit1{
+  width: 100%;
+  height: 40px;
+  background-color: #ebebeb;
+  border:none;
+  border-radius: 100px;
+  color:#000000;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#background-video {
+  width: 380px;
+  height: auto;
+  pointer-events: none; /* Isso impede que o vídeo receba eventos do mouse */
+}
+
+/* Adicione um estilo de classe aos controles do vídeo que você deseja esconder */
+#background-video::-webkit-media-controls {
+  display:none !important;
+}
+
+#placar {
+  color: #e1e1e1;
+  font-size: 20px;
+}
+
+body {
+  background-image: url('background.png');
+  background-size: cover; /* Para dimensionar a imagem para cobrir toda a tela */
+  background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+}

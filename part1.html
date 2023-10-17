@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styletwo.css">
+    <title>Entre já</title>
+</head>
+<body>
+    <header>
+        <h4 style="color:#6ace63 !important">- Conheça o nosso -</h4>
+        <img src="spotify.jpg" style="width: 230px; height: 105px;">
+    </header>
+
+    
+    <video autoplay muted loop>
+        <source src="music.mp4" type="video/mp4">
+    </video>
+
+    <br>
+    <center>
+        <h2>• Bem vindo ao nosso spotify •</h2>
+        <p><div class="container">
+            <div id="formulario">
+            <h3>Digite como deseja ser chamado:</h3>
+            <input type="text" id="nome">
+            <br>
+            <button onclick="confirmarNome()">Confirmar</button>
+        </div>
+            <div id="confirmacao" style="display:none">
+                <h3>• Olá, seja bem-vindo <span id="nomeConfirmado"></span>! •</h3>
+                <img src="gatito.png">
+                <p><h3 style="color:#6ace63 !important">Clique no botão abaixo e jogue já nosso jogo!</h3></p>
+                <p><h4>¿ - "Mas que jogo é esse?" - ?</h4></p>
+                <p><h3 style="color:#6ace63 !important">O jogo consiste em você adivinhar a música que está tocando. Bem simples, não é?</h3></p>
+                <a href="part2.html"><input type="button" value="Adivinhe a música" class="submit"></a>
+                <p><h3>Clique e se divirta!</h3></p>
+            </div>
+        </div></p>
+
+        <script>
+            function confirmarNome() {
+                var nome = document.getElementById("nome").value;
+                document.getElementById("nomeConfirmado").innerText = nome;
+                document.getElementById("confirmacao").style.display = "block";
+                document.getElementById("formulario").style.display = "none";
+            }
+        </script>
+    </center>
+</html>
