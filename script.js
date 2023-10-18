@@ -32,7 +32,7 @@ let pontos = 0;
 
 window.onSpotifyWebPlaybackSDKReady = () => {
   // Trocar o token abaixo a cada hora, precisa estar logado, através do link https://developer.spotify.com/documentation/web-playback-sdk/tutorials/getting-started 
-  const token = "BQDNPWHgrPznBBgZGbksX5bKDFdDAAXUp_u8M6GsUGgmcutbp7SfSZtr7_eqP7hh2OyQpsrPh2S7prqEPxSsY4qTaC0WKekQ3snYMeOwcCtq9FBShh59yZ-vkPS5JJct8Azzt4L-eh6sbbMhE94VupxULT--22zuDD489lylC5MoV6qBf9VYi198CtfvyA68fKVps0jGT64G2HogaZZE0R88ph2M" 
+  const token = "BQC5bvbwFPbG5CBPHICRx8jCuuc3xYDKTtHftKQku6I4WAnOQvr3jLU1cxBi628_5nzZ1x_gjoRX9JL9_jobf_rnlX21YZIZl3B1pcsWAPqcKClqQgNUdPKk5r9kEXXoSqUERW_KucJcXYCtGLQBjI8Gzm5INvgGkoj4LOkVuufw1i6yWer2zCNdTqTT1hjsAvywyEWNZ5MUcS2-bF2WkncNfLU7" 
   player = new Spotify.Player({
     name: "Web Playback SDK Quick Start Player",
     getOAuthToken: (cb) => {
@@ -43,7 +43,7 @@ window.onSpotifyWebPlaybackSDKReady = () => {
   player.addListener('ready', ({ device_id }) => {
     console.log('Ready with Device ID', device_id);
     const connect_to_device = () => {
-      let album_uri = "spotify:album:0D59BFMmnA87oPyk1oSe1b"
+      let album_uri = "spotify:playlist:7zY8LrzayzDhWIMOfxdser"
       fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device_id}`, {
         method: "PUT",
         body: JSON.stringify({
